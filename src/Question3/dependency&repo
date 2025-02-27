@@ -1,0 +1,15 @@
+For example, adding the JitPack repository to fetch dependencies hosted on GitHub:
+ <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+      </repository>
+  </repositories>
+
+if I want to use OkHttp (a popular HTTP client) from JitPack, I add:
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>okhttp</artifactId>
+      <version>4.9.3</version>
+    </dependency>
+
+

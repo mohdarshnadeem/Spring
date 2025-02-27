@@ -1,0 +1,8 @@
+Referenced URLs:
+1. Maven Shade Plugin: https://maven.apache.org/plugins/maven-shade-plugin/
+2. Java Executable JAR: https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+
+Other Documentation:
+- Added maven-shade-plugin to generate an executable JAR.
+- Created a App class with "Hello World" output.
+- Used `java -jar` command to run the JAR.

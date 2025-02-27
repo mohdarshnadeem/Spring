@@ -1,0 +1,36 @@
+<build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.2.4</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <transformers>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                  <mainClass>com.arsh.App</mainClass>
+                </transformer>
+              </transformers>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  then mvn clean package
+  Navigating to the target/ directory and running:
+  ->java -jar target/Project-Name.jar
+
+  since i used mac:
+
+╭─    ~/Documents/Spring/SpringMvc/first-maven-project ───────────────────────────────────────────────────────────────────────────────────── ✔  09:17:55 PM  ─╮
+╰─ java -jar target/first-maven-project-1.0-SNAPSHOT.jar                                                                                                            ─╯
+
+Hello World!
+

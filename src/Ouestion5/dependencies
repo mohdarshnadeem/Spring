@@ -1,0 +1,39 @@
+Summary Table
+Scope	Available at Compile-Time	  Available at Runtime	  Included in JAR/WAR	Example Dependency
+compile	          Yes	                        Yes	                   Yes	            Spring Core
+runtime	          No	                        Yes	                   Yes	            MySQL JDBC Driver
+test	          Yes	                        Yes	                    No	            JUnit
+provided          Yes	                         No	                    No          	Servlet API
+
+
+examples:
+compile-time: by default
+<dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>5.3.23</version>
+    </dependency>
+
+runtime:
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.33</version>
+      <scope>runtime</scope>
+    </dependency>
+
+provided:
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+
+test:
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>runtime</scope>
+    </dependency>

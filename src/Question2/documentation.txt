@@ -1,0 +1,6 @@
+Referenced URLs:
+1. Gson Maven Repository: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/
+
+Other Documentation:
+- This project uses Gson for JSON parsing.
+- The dependency is added in pom.xml.

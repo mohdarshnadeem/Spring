@@ -1,0 +1,7 @@
+Referenced URLs:
+1. JitPack Repository: https://jitpack.io
+2. OkHttp Dependency: https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp
+
+Other Documentation:
+- Added the JitPack repository to pom.xml.
+- Added OkHttp dependency for making HTTP requests.
