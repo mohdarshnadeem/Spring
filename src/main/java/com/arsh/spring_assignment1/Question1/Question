@@ -1,0 +1,3 @@
+Q1)Write a program to demonstrate Tightly Coupled code.
+ans: this is a tight coupled code as we have to explicitly create object of bubble sort in Binary search
+i.e. the class id tightly dependent on other class

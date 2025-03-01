@@ -1,0 +1,4 @@
+Demonstrate how you will resolve ambiguity while autowiring bean
+and: can be done via two ways
+1. using Primary annotation, either make one class primary
+2. using Qualifier: used across the field

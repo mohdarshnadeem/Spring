@@ -1,0 +1,4 @@
+Q2)Write a program to demonstrate Loosely Coupled code.
+Q3)Use @Component and @Autowired annotations to in Loosely Coupled code for dependency management
+The application is now loosely coupled as no object creation login is inside the BinarySearch class
+,spring manages it via IOC.

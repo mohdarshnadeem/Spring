@@ -1,0 +1,2 @@
+Q6)Perform Constructor Injection in a Spring Bean
+ans: can be achieved using qualifier in front of constructor parameter
