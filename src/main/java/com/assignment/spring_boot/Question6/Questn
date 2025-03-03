@@ -1,0 +1,17 @@
+Q6)Enable devtools and play around by making changes.
+
+To enable Spring Boot DevTools, I added the following dependency in pom.xml:
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-devtools</artifactId>
+    <optional>true</optional>
+</dependency>
+
+Then, I enabled automatic restart by setting:
+
+spring.devtools.restart.enabled=true
+
+I played with DevTools by:
+ ->Changing a controller method and observing automatic restart.
+ ->Updating application properties and seeing real-time changes without restarting.

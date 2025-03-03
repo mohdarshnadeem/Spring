@@ -1,0 +1,20 @@
+Q5)Enable actuator services and play around few endpoints it exposes.
+
+To enable Spring Boot Actuator, I added the following dependency in pom.xml:
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+
+Then, I enabled actuator endpoints by modifying the application.properties file:
+
+management.endpoints.web.exposure.include=*
+
+After running the application, I accessed the following Actuator endpoints:
+
+/actuator/health : Checked application health status.
+/actuator/info : Displayed application information.
+/actuator/metrics : Monitored performance metrics.
+/actuator/env : Displayed environment properties.
+/actuator/mappings : Listed all available API routes.

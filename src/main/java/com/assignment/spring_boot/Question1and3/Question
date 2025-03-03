@@ -1,0 +1,28 @@
+1. Create a sample spring boot application and configure H2 in memory database dependency.
+
+notes:🔹 Why Do We Need a Service Layer?
+
+          Separation of Concerns
+              The Service Layer acts as an intermediate layer between the Controller and Repository.
+              It helps decouple the business logic from data access.
+
+          Business Logic & Processing
+              If in the future, you need to add validation, transformation, logging, or complex operations before saving employees, the Service Layer is where you do it.
+              Example: Checking if an employee already exists before saving.
+
+          Reusability & Maintainability
+              The Service Layer can be reused by multiple controllers.
+              If you directly call Repository from the Controller, you'd have to duplicate logic in different controllers.
+
+      🔹 Why Not Use Repository Directly in Controller?
+
+      ✅ Bad Practice
+
+          If the Controller calls EmployeeRepository.saveAll() directly, your Controller depends too much on database details.
+          This makes your code tightly coupled and harder to change, test, and maintain.
+
+      ✅ Better Approach
+
+          Controller should handle HTTP requests only.
+          Service Layer should handle business logic.
+          Repository Layer should handle database operations.
