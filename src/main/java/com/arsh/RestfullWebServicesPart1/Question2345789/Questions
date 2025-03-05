@@ -1,0 +1,7 @@
+2.Create an Employee Bean(id, name, age) and service to  perform different operations related to employee.
+3.Implement GET http request for Employee to get list of employees.
+4.Implement GET http request using path variable top get one employee
+5.Implement POST http request for Employee to create a new employee.
+6.Implement Exception Handling for resource not found
+7.Implement DELETE http request for Employee to delete employee
+8.Implement PUT http request for Employee to update employee
