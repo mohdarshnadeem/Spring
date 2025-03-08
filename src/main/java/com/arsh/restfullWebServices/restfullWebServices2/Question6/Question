@@ -1,0 +1,4 @@
+HATEOAS
+
+A) Configure hateoas with your spring boot application. Create an api which returns User Details along with url
+to show all topics

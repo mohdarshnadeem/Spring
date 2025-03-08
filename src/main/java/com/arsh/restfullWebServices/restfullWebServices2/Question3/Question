@@ -1,0 +1,7 @@
+Swagger
+
+A) Configure the swagger plugin and create a document of the following methods: Get details of the User using GET request.
+Save details of the user using POST request. Delete a user using DELETE request.
+
+B) In swagger documentation, add the description of each class and URI so that in swagger UI the purpose of class and
+URI is clear.

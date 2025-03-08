@@ -1,0 +1,10 @@
+Versioning Restful APIs
+
+Create 2 API for showing user details. The first api should return only basic details of the user and the other API should return more/enhanced details of the user,
+
+Now apply versioning using the following methods:
+
+A) MimeType Versioning
+B) Request Parameter versioning
+C) URI versioning
+D) Custom Header Versioning
