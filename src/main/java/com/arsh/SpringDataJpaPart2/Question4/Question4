@@ -1,0 +1,5 @@
+Q4)Component Mapping:
+1) Implement and demonstrate Embedded mapping using employee table having following fields: id, firstName, lastName,
+age, basicSalary, bonusSalary, taxAmount, specialAllowanceSalary.
+
+Note: logic is present in test folder
