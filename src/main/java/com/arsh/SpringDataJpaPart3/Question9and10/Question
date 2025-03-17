@@ -1,0 +1,37 @@
+Q9) Which session object method can be used to evict an object from the cache?
+In Hibernate, the following session object methods can be used to evict an entity from the first-level cache:
+
+1.evict(Object entity) → Evicts a given entity from the cache.
+session.evict(myEntity);
+
+2.clear() → Removes **all** entities from the cache.
+session.clear();
+
+3.close() → Closes the session and removes all cached entities.
+session.close();
+
+Q10) What does `@Transactional` annotation do?
+The @Transactional annotation in Spring ensures that all the database operations within a method are executed
+inside a transaction.
+
+Main Features of @Transactional
+Automatically Manages Transactions** → No need to manually commit/begin transactions.
+Rolls Back on Exception** → If there is an exception, all transactional changes are rolled back.
+Default Propagation = REQUIRED** → If there is already a transaction present, it will be used; otherwise, a new one is begun.
+Default Isolation Level = DEFAULT** → The database's default isolation level is used.
+
+Example Usage
+@Service
+public class UserService {
+
+@Autowired
+private UserRepository userRepository;
+
+@Transactional
+public void registerUser(User user) {
+userRepository.save(user);
+}
+}
+- The `registerUser()` method executes within a transaction.
+- If **no exception is encountered, the transaction is committed.
+- If an exception is encountered, the transaction is **rolled back, avoiding partial changes.
